@@ -76,24 +76,6 @@ Update the file paths in **Section 2 (Configuration)** to point to your local in
 
 ---
 
-## Using the map viewer
-
-1. Open `safestreet-amman.html` in any modern browser (Chrome, Firefox, Edge).
-2. Drop `amman_accessibility_FINAL.geojson` onto the upload zone, or click to browse.
-3. The map loads and colors each street segment by accessibility score.
-
-**Controls:**
-
-- **Gradient mode** — colors streets on a five-level scale from green (safe) to red (unsafe)
-- **Binary mode** — green/red for predicted label, teal/crimson for human-verified labels
-- **Confidence filter** — hides segments where the model is uncertain (probability close to 0.5)
-- **Highway type filter** — focus on a specific road category
-- Click any street to see its details in the side panel
-
-> The GeoJSON file is ~60 MB. Loading takes a few seconds on first open.
-
----
-
 ## Features used
 
 | Category | Features |
@@ -141,15 +123,3 @@ Slope is the most important feature in Amman's hilly terrain. Segments with a ma
 **Threshold selection:** The decision threshold is chosen by maximising F1 on the out-of-fold precision-recall curve rather than defaulting to 0.5, to account for class imbalance.
 
 ---
-
-## Data sources
-
-- Street network: [OpenStreetMap](https://www.openstreetmap.org/) via [OSMnx](https://github.com/gboeing/osmnx)
-- Elevation: [SRTM](https://www2.jpl.nasa.gov/srtm/) 30m DEM
-- Labels: field survey by the project team + crowdsourced reports from app users
-
----
-
-## Team
-
-Graduation project — King Abdullah II School of Information Technology, University of Jordan.
