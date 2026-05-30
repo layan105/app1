@@ -31,10 +31,11 @@ The notebook pulls Amman's street network from OpenStreetMap, combines it with s
 ```
 safestreet-amman/
 ├── SafeStreet_Amman.ipynb          # Main ML pipeline (run in Google Colab)
-├── safestreet-amman.html           # Web map viewer
 ├── requirements.txt                # Python dependencies
 └── README.md
 ```
+## WEB PAGE
+https://layan105.github.io/app1/ --> The webviewer containing the geojson file from the notebook code output.
 
 **Input files** (not versioned — upload to Colab manually):
 
