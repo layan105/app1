@@ -33,7 +33,6 @@ safestreet-amman/
 ├── SafeStreet_Amman.ipynb          # Main ML pipeline (run in Google Colab)
 ├── safestreet-amman.html           # Web map viewer
 ├── requirements.txt                # Python dependencies
-├── .gitignore
 └── README.md
 ```
 
